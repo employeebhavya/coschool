@@ -12056,6 +12056,7 @@ nav ul li.has-dropdown .submenu li::after {
 .mobile-menu-main nav ul li a {
   display: block;
   color: #181010;
+  text-transform: uppercase;
 }
 
 .mobile-menu-main nav ul {
