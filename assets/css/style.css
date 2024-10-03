@@ -22023,3 +22023,14 @@ body.loaded {
 .expand-button {
   margin-top: 20px;
 }
+.first-service-section .service-inner.financial-service-inner .content {
+  text-align: center;
+}
+.service-process-section .service-inner.financial-service-inner {
+  text-align: left;
+}
+@media only screen and (max-width: 767px) {
+  #workProcess .section-title br {
+    display: none;
+  }
+}
