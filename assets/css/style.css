@@ -11390,7 +11390,7 @@ header.header-three
   ul
   li
   a.nav-link:hover {
-  color: var(--color-primary) !important;
+  color: #000 !important;
 }
 
 .tmp-header-area-start.header-one.construction-radious .tmp-nav-area-one {
@@ -11717,7 +11717,7 @@ nav ul li.mega .submenu li {
   color: #fff;
 }
 .tmp-header-area-start.header-two.header-three .header-nav a.nav-link:hover {
-  color: var(--color-primary) !important;
+  color: #000 !important;
 }
 .tmp-header-area-start.header-two.header-three
   .header-nav
@@ -11729,7 +11729,7 @@ nav ul li.mega .submenu li {
   .header-nav
   .has-dropdown
   a.nav-link:hover {
-  color: var(--color-primary) !important;
+  color: #000 !important;
 }
 
 .has-dropdown .submenu {
@@ -13126,7 +13126,7 @@ nav ul li.has-dropdown .submenu li::after {
   display: flex;
   align-items: center;
   overflow: hidden;
-  background-image: linear-gradient(130deg, #ff42ff 0%, #743ee3 30%) !important;
+  background-image: url("../../assets/images/header.png") !important;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .tmp-banner__agency-wrapper-bg {
@@ -14285,11 +14285,11 @@ nav ul li.has-dropdown .submenu li::after {
   width: 60px;
 }
 .service-inner.financial-service-inner .content {
-  text-align: center;
+  text-align: left;
 }
 .service-inner.financial-service-inner .content .title {
   font-size: 22px;
-  line-height: 35px;
+  line-height: 28px;
   font-weight: var(--s-bold);
   font-family: var(--font-secondary);
   color: var(--color-heading);
@@ -17257,7 +17257,7 @@ body.service-details {
 }
 
 .tmp-banner__agency-wrapper-bg {
-  background-image: linear-gradient(130deg, #ff42ff 0%, #743ee3 30%) !important;
+  background-image: url("../../assets/images/header.png") !important;
   height: 900px;
   display: flex;
   align-items: center;
@@ -19548,7 +19548,7 @@ body.service-details {
 }
 .team-details-thumb .content {
   padding: 0 30px;
-  padding-bottom: 40px;
+  padding-bottom: 20px;
   padding-top: 30px;
 }
 .team-details-thumb .content .author-info .name {
@@ -19594,7 +19594,6 @@ body.service-details {
 }
 .team-details-content .personal-info {
   padding-bottom: 30px;
-  border-bottom: 1px solid #e7e7e7;
 }
 .team-details-content .personal-info .description {
   margin-bottom: 15px;
@@ -20944,7 +20943,7 @@ body.loaded {
   }
 }
 .about-area.about-style-one .about-thumbnails .thumbnail img {
-  max-width: max-content;
+  max-width: 100%;
 }
 @media only screen and (max-width: 767px) {
   .about-area.about-style-one .about-thumbnails .thumbnail img {
@@ -21743,10 +21742,6 @@ body.loaded {
 .pl-50 {
   padding-left: 50px;
 }
-
-.footer-main.footer-style-one {
-  margin-top: 75px;
-}
 .footer-main.footer-style-one .single-footer-wrapper .logo {
   margin-bottom: 30px;
 }
@@ -21997,4 +21992,34 @@ body.loaded {
 }
 .accordion-body p {
   margin-bottom: 10px;
+}
+.expandable-pannel ul,
+.expandable-pannel li {
+  list-style: disc !important;
+}
+.expandable-pannel {
+  text-align: left;
+  display: none;
+  transition: all 0.3s ease-in-out;
+  transform: translateY(20px);
+  opacity: 0;
+}
+.expandable-pannel.active {
+  display: block;
+  transform: translateY(0);
+  opacity: 1;
+}
+.expand-button button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 100%;
+  color: var(--color-primary);
+}
+.expandable-pannel ul {
+  padding-left: 22px;
+}
+.expand-button {
+  margin-top: 20px;
 }
